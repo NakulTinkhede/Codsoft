@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calci</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fav.png" type="image/png">
+</head>
+<body>
+
+    <button id="toggle-theme">☀️-🌕</button>
+
+
+  <div class="calculator">
+    <input type="text" id="display" disabled />
+
+   
+
+
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="deleteLast()">⌫</button>
+      <button class="btn" onclick="appendValue('%')">%</button>
+      <button class="btn operator" onclick="appendValue('/')">÷</button>
+
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn operator" onclick="appendValue('*')">×</button>
+
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn operator" onclick="appendValue('-')">−</button>
+
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn operator" onclick="appendValue('+')">+</button>
+
+      <button class="btn" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="appendValue('.')">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+
+   <div class="theme-switcher">
+  <h3>Select Wallpaper Theme:</h3>
+  <div class="themes">
+    <!-- <button onclick="setWallpaper('theme1')" style="background-image: url('wallpapers/theme1.jpg');"></button>
+    <button onclick="setWallpaper('theme2')" style="background-image: url('wallpapers/theme2.jpg');"></button>
+    <button onclick="setWallpaper('theme3')" style="background-image: url('wallpapers/theme3.jpg');"></button>
+    <button onclick="setWallpaper('theme4')" style="background-image: url('wallpapers/theme4.jpg');"></button> -->
+
+    <button onclick="setWallpaper('dark1')" style="background-image: url('wallpapers/dark1.jpg');"></button>
+<button onclick="setWallpaper('dark2')" style="background-image: url('wallpapers/dark2.jpg');"></button>
+<button onclick="setWallpaper('light1')" style="background-image: url('wallpapers/light1.jpg');"></button>
+<button onclick="setWallpaper('light2')" style="background-image: url('wallpapers/light2.jpg');"></button>
+
+  </div>
+</div>
+
+  </div>
+  
+
+    <div class="history">
+  <h3>History</h3>
+  <ul id="history-list"></ul>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
