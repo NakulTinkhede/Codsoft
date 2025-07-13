@@ -72,7 +72,7 @@ function addToHistory(entry) {
 
 
 function setWallpaper(theme) {
-  document.body.style.backgroundImage = `url('wallpapers/${theme}.jpg')`;
+  document.body.style.backgroundImage = `url('calci/wallpapers/${theme}.jpg')`;
   localStorage.setItem("wallpaper", theme); // store user preference
 }
 
